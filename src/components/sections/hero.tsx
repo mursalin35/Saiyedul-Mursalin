@@ -28,8 +28,8 @@ export function Hero() {
             <h2 className="text-xl md:text-2xl font-medium text-primary">
               Hello, I&apos;m
             </h2>
-            <h1 className="text-5xl md:text-7xl  font-bold tracking-tight  text-muted-foreground ">
-              MERN Stack <span className="text-6xl">Developer</span> <br />
+            <h1 className="text-5xl md:text-7xl  font-bold tracking-tight  text-muted-foreground leading-tight md:leading-none">
+              MERN Stack <span className="md:text-6xl">Developer</span> <br />
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground font-light">
               I build modern and responsive web applications that help
