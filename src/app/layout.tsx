@@ -9,7 +9,7 @@ import { ScrollToTop } from "@/components/ui/scroll-to-top";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "Developer Portfolio",
+  title: "Saiyedul Mursalin",
   description: "A modern developer portfolio built with Next.js",
 };
 
