@@ -9,41 +9,42 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
   {
-    id: 1,
-    title: "Project One",
-    description: "A full-stack web application built with Next.js and MongoDB. Features user authentication and real-time updates.",
-    image: "/placeholder-project.jpg", // Placeholder
-    tags: ["Next.js", "MongoDB", "Tailwind"],
-    demoUrl: "#",
-    repoUrl: "#",
-  },
+  id: 1,
+  title: "FinEase",
+  description: "A finance app to track income, expenses, and insights with secure authentication and interactive dashboards.",
+  image: "https://i.ibb.co.com/xK4BKNLv/image.png",
+  tags: ["React", "MongoDB", "Tailwind", "Firebase", "Node.js", "Express.js"],
+  demoUrl: "https://finease-db.web.app",
+  repoUrl: "https://github.com/mursalin35/FinEase-Server-Side.git",
+},
+
   {
-    id: 2,
-    title: "Project Two",
-    description: "An e-commerce platform with stripe integration and admin dashboard.",
-    image: "/placeholder-project.jpg", // Placeholder
-    tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
-    repoUrl: "#",
-  },
-  {
-    id: 3,
-    title: "Project Three",
-    description: "A portfolio website template for developers.",
-    image: "/placeholder-project.jpg", // Placeholder
-    tags: ["Next.js", "Framer Motion"],
-    demoUrl: "#",
-    repoUrl: "#",
-  },
-  {
-    id: 4,
-    title: "Project Four",
-    description: "A task management app with drag and drop functionality.",
-    image: "/placeholder-project.jpg", // Placeholder
-    tags: ["React", "Redux", "Firebase"],
-    demoUrl: "#",
-    repoUrl: "#",
-  },
+  id: 2,
+  title: "WarmPaws",
+  description: "A winter pet care app offering services, accessories, tips, and secure login for pet owners.",
+  image: "https://i.ibb.co.com/cSCHht2P/image.png",
+  tags: ["React", "Firebase", "Tailwind", "DaisyUI"],
+  demoUrl: "https://pet-care-26f18.web.app/",
+  repoUrl: "https://github.com/mursalin35/WarmPaws.git",
+},
+{
+  id: 3,
+  title: "M.S Homoeo Complex",
+  description: "A homoeopathy shop system with protected login, product management, and a modern Next.js interface.",
+  image: "https://i.ibb.co.com/B5q4KFSS/image.png",
+  tags: ["Next.js", "Node.js", "Express", "MongoDB", "JWT"],
+  demoUrl: "https://ms-homoeo-complex.vercel.app",
+  repoUrl: "https://github.com/mursalin35/MS-Homoeo-Complex.git",
+},
+{
+  id: 4,
+  title: "Apps Store",
+  description: "A responsive web app to explore, manage, and track applications with interactive charts and analytics.",
+  image: "https://i.ibb.co.com/VWx7p1dT/image.png",
+  tags: ["React", "Tailwind", "DaisyUI", "Recharts"],
+  demoUrl: "https://apps-storebd.netlify.app",
+  repoUrl: "https://github.com/mursalin35/Apps-Store.git",
+}
 ];
 
 export function Projects() {
@@ -52,56 +53,65 @@ export function Projects() {
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
         <p className="text-muted-foreground max-w-2xl mx-auto">
-          Here are some of the projects I&apos;ve worked on.
+          Here are some of the projects I've worked on.
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-        {projects.map((project, index) => (
-          <motion.div
-            key={project.id}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
-          >
-            <Card className="overflow-hidden group h-full flex flex-col">
-              <div className="aspect-video bg-muted relative overflow-hidden">
-                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
-                  <Button size="sm" variant="secondary" asChild>
-                    <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
-                      <FaExternalLinkAlt className="mr-2" /> Demo
-                    </a>
-                  </Button>
-                  <Button size="sm" variant="secondary" asChild>
-                    <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">
-                      <FaGithub className="mr-2" /> Code
-                    </a>
-                  </Button>
-                </div>
-                {/* Placeholder for Project Image */}
-                <div className="w-full h-full flex items-center justify-center text-muted-foreground bg-secondary/50">
-                  Project Image
-                </div>
-              </div>
-              <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                <p className="text-muted-foreground mb-4 flex-grow">{project.description}</p>
-                <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="px-2 py-1 bg-secondary text-secondary-foreground text-xs rounded-md font-medium"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </Card>
-          </motion.div>
-        ))}
-      </div>
+     <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
+  {projects.map((project, index) => (
+    <motion.div
+      key={project.id}
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+      className="group"
+    >
+      <Card className="overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col h-full border-0">
+        {/* Project Image */}
+        <div className="relative w-full aspect-video overflow-hidden rounded-t-2xl">
+          <img
+            src={project.image}
+            alt={project.title}
+            className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+          />
+          {/* Overlay Buttons */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
+            <Button size="sm" variant="secondary" asChild>
+              <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
+                <FaExternalLinkAlt className="mr-1" /> Demo
+              </a>
+            </Button>
+            <Button size="sm" variant="secondary" asChild>
+              <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">
+                <FaGithub className="mr-1" /> Code
+              </a>
+            </Button>
+          </div>
+        </div>
+
+        {/* Project Info */}
+        <div className="p-6 flex flex-col flex-grow">
+          <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">
+            {project.title}
+          </h3>
+          <p className="text-muted-foreground mb-4 flex-grow">{project.description}</p>
+          <div className="flex flex-wrap gap-2">
+            {project.tags.map((tag) => (
+              <span
+                key={tag}
+                className="px-3 py-1 bg-gradient-to-r from-indigo-500 to-purple-500 text-white text-xs rounded-full font-medium"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+      </Card>
+    </motion.div>
+  ))}
+</div>
+
     </Section>
   );
 }

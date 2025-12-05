@@ -9,18 +9,18 @@ import { FaGraduationCap } from "react-icons/fa";
 const educationData = [
   {
     id: 1,
-    degree: "Bachelor of Science in Computer Science",
-    institution: "University Name",
-    year: "2020 - 2024",
+    degree: "Diploma in Computer Science and Technology",
+    institution: "Islami Bank Institute of Technology, Dhaka",
+    year: " Nov 2023 – Present",
     description: "Focused on software engineering, algorithms, and web development.",
   },
-  {
-    id: 2,
-    degree: "Higher Secondary Certificate",
-    institution: "College Name",
-    year: "2018 - 2020",
-    description: "Science group with focus on mathematics and physics.",
-  },
+  // {
+  //   id: 2,
+  //   degree: "Higher Secondary Certificate",
+  //   institution: "College Name",
+  //   year: "2018 - 2020",
+  //   description: "Science group with focus on mathematics and physics.",
+  // },
 ];
 
 export function Education() {

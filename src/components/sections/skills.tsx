@@ -4,13 +4,14 @@ import * as React from "react";
 import { motion } from "framer-motion";
 import { Section } from "@/components/ui/section";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt } from "react-icons/fa";
-import { SiNextdotjs, SiTailwindcss, SiTypescript, SiMongodb } from "react-icons/si";
+import { SiNextdotjs, SiTailwindcss, SiTypescript, SiMongodb, SiFirebase } from "react-icons/si";
 
 const skills = [
   { name: "HTML5", icon: FaHtml5, color: "text-orange-500" },
   { name: "CSS3", icon: FaCss3Alt, color: "text-blue-500" },
   { name: "JavaScript", icon: FaJs, color: "text-yellow-400" },
-  { name: "TypeScript", icon: SiTypescript, color: "text-blue-600" },
+  // { name: "TypeScript", icon: SiTypescript, color: "text-blue-600" },
+  { name: "Firebase", icon: SiFirebase, color: "text-orange-500" },
   { name: "React", icon: FaReact, color: "text-cyan-400" },
   { name: "Next.js", icon: SiNextdotjs, color: "text-foreground" },
   { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-cyan-500" },
@@ -25,7 +26,7 @@ export function Skills() {
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Skills & Technologies</h2>
         <p className="text-muted-foreground max-w-2xl mx-auto">
-          The tools and technologies I use to build digital products.
+          The tools and technologies I use to build Modern Website.
         </p>
       </div>
 

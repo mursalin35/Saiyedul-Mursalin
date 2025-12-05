@@ -47,7 +47,7 @@ export function Contact() {
         >
           <h3 className="text-2xl font-bold">Contact Information</h3>
           <p className="text-muted-foreground">
-            I&apos;m currently available for freelance work and full-time opportunities.
+            I’m available for new opportunities, open to both remote <br /> and on-site roles.
           </p>
           
           <div className="space-y-4">
@@ -58,7 +58,7 @@ export function Contact() {
               <div>
                 <p className="font-medium">Email</p>
                 <a href="mailto:hello@example.com" className="text-muted-foreground hover:text-primary">
-                  hello@example.com
+                  msmursalin35@gmail.com
                 </a>
               </div>
             </div>
@@ -69,7 +69,7 @@ export function Contact() {
               <div>
                 <p className="font-medium">Phone</p>
                 <a href="tel:+1234567890" className="text-muted-foreground hover:text-primary">
-                  +1 (234) 567-890
+                  +88 01860-231090
                 </a>
               </div>
             </div>
@@ -79,7 +79,7 @@ export function Contact() {
               </div>
               <div>
                 <p className="font-medium">Location</p>
-                <p className="text-muted-foreground">New York, USA</p>
+                <p className="text-muted-foreground">BKSP, Saver, Dhaka, Bangladesh</p>
               </div>
             </div>
           </div>

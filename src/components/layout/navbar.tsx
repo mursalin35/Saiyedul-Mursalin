@@ -8,8 +8,8 @@ import { ThemeToggle } from "@/components/theme-toggle";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
+  { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
-  { name: "Education", href: "#education" },
   { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
   { name: "Contact", href: "#contact" },
@@ -41,7 +41,7 @@ export function Navbar() {
           href="/"
           className="text-xl font-bold tracking-tighter hover:text-primary transition-colors"
         >
-          Portfolio<span className="text-primary">.</span>
+          Saiyedul Mursalin<span className="text-primary">.</span>
         </Link>
 
         {/* Desktop Nav */}

@@ -7,7 +7,7 @@ import { Contact } from "@/components/sections/contact";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-0">
+    <div className="flex max-w-6xl mx-auto flex-col gap-0">
       <Hero />
       <About />
       <Education />

@@ -1,10 +1,12 @@
 "use client";
 
 import * as React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Section } from "@/components/ui/section";
 import { Card } from "@/components/ui/card";
 import { FaCode, FaLaptopCode, FaServer } from "react-icons/fa";
+import aboutImage from "../../assets/aboutImage.png"
 
 export function About() {
   return (
@@ -20,7 +22,7 @@ export function About() {
           <div className="aspect-square rounded-2xl overflow-hidden bg-muted relative">
             {/* Placeholder for Profile Image */}
             <div className="absolute inset-0 flex items-center justify-center text-muted-foreground">
-              Profile Image
+             <Image src={aboutImage} alt="aboutImage" />
             </div>
           </div>
           <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-primary/10 rounded-full blur-3xl -z-10" />
