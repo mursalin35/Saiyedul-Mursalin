@@ -19,6 +19,7 @@ export function About() {
           transition={{ duration: 0.5 }}
           className="relative"
         >
+          {/* comment */}
           <div className="aspect-square rounded-2xl overflow-hidden bg-muted relative">
             {/* Placeholder for Profile Image */}
             <div className="absolute inset-0 flex items-center justify-center text-muted-foreground">
